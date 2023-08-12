@@ -1,0 +1,73 @@
+\ProvidesPackage{macros}
+
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[french]{babel}
+\addto\captionsfrench{\def\tablename{Tableau}}
+
+\RequirePackage{graphicx}	
+\RequirePackage{color}					
+\RequirePackage{amsmath}				
+\RequirePackage{amssymb}				
+\RequirePackage{mathrsfs}
+\RequirePackage{booktabs}
+\RequirePackage[separate-uncertainty = true]{siunitx}
+\RequirePackage{xcolor}
+
+%\RequirePackage[margin=1cm]{caption} %[justification=centering]{caption} %Pour les légendes centralisées
+%\RequirePackage[margin={1cm,0cm}]{subcaption}
+
+\RequirePackage{tikz}
+\usepackage[abs]{overpic}
+\usepackage{pict2e}
+\usepackage{pdfpages}
+\usepackage{tikz}
+\usepackage{tcolorbox}
+\usetikzlibrary{shapes.arrows, fadings}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{groupplots}
+\usepgfplotslibrary{dateplot}
+\usetikzlibrary{shapes.callouts}
+\usetikzlibrary{arrows}
+
+% Syntax: \colorboxed[<color model>]{<color specification>}{<math formula>}
+\newcommand*{\colorboxed}{}
+\def\colorboxed#1#{%
+  \colorboxedAux{#1}%
+}
+\newcommand*{\colorboxedAux}[3]{%
+  % #1: optional argument for color model
+  % #2: color specification
+  % #3: formula
+  \begingroup
+    \colorlet{cb@saved}{.}%
+    \color#1{#2}%
+    \boxed{%
+      \color{cb@saved}%
+      #3%
+    }%
+  \endgroup
+}
+
+\def\uline#1#2{\color{#1}\underline{{\color{black}#2}}\color{black}}
+\def\ubrace#1#2#3{\color{#1}\underbrace{{\color{black}#2}}_\text{#3}\color{black}}
+
+\edef\hc{\string:}
+
+\newcommand{\mathsc}[1]{\mathrm{\scriptscriptstyle {#1}}}
+
+\newcommand{\dv}[2]{\frac{\mathrm d #1}{\mathrm d #2}}
+\newcommand{\pdv}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\diff}{\mathop{}\!\mathrm{d}}
+\DeclareMathOperator{\sinc}{sinc}
+\renewcommand{\v}[1]{\boldsymbol{\mathbf{#1}}}
+\newcommand{\tens}[1]{\boldsymbol{\underline{#1}}}
+\DeclareMathOperator{\divg}{div}
+\DeclareMathOperator{\rot}{\v{rot}}
+\DeclareMathOperator{\grad}{\v{grad}}
+
+\renewcommand{\P}{\mathscr{P}}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\e}[1]{\text{e}^{#1}}

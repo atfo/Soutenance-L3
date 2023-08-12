@@ -1,0 +1,30 @@
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\addto\captionsfrench{\def\tablename{Tableau}}
+
+\usepackage{color}					
+\usepackage{amsmath}				
+\usepackage{amssymb}				
+\usepackage{mathrsfs}
+\usepackage{booktabs}
+\RequirePackage[separate-uncertainty = true]{siunitx}
+
+\edef\hc{\string:}
+
+\newcommand{\mathsc}[1]{\mathrm{\scriptscriptstyle {#1}}}
+
+\newcommand{\dv}[2]{\frac{\mathrm d #1}{\mathrm d #2}}
+\newcommand{\pdv}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\diff}{\mathop{}\!\mathrm{d}}
+\DeclareMathOperator{\sinc}{sinc}
+\renewcommand{\v}[1]{\boldsymbol{\mathbf{#1}}}
+\newcommand{\tens}[1]{\boldsymbol{\underline{#1}}}
+\DeclareMathOperator{\divg}{div}
+\DeclareMathOperator{\rot}{\v{rot}}
+\DeclareMathOperator{\grad}{\v{grad}}
+
+\renewcommand{\P}{\mathscr{P}}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\e}[1]{\text{e}^{#1}}

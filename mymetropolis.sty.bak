@@ -1,0 +1,29 @@
+\ProvidesPackage{mymetropolis}
+
+\usetheme[sectionpage=progressbar, subsectionpage=progressbar, block=fill]{metropolis}
+
+\makeatletter
+ 
+%\setbeamertemplate{section in toc}[sections numbered]
+%\setbeamertemplate{subsection in toc}[subsections numbered]
+ 
+\patchcmd{\ps@empty}{\usebeamertemplate***{navigation symbols}}{}{}{} 
+ 
+\makeatother
+
+\AtBeginSection[]
+{
+    \setbeamertemplate{navigation symbols}{}
+    \frame[plain,c,noframenumbering]{
+        \sectionpage
+        \tableofcontents[currentsection,subsectionstyle=hide]}
+    \setbeamertemplate{navigation symbols}{\normalsize\insertframenumber/\inserttotalframenumber}
+    \setbeamerfont{currentsection in toc}{size=\Large}
+}
+
+\newcommand{\tocframe}{
+	\frame[plain,c,noframenumbering]{
+		\tableofcontents
+	}
+}
+

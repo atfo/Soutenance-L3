@@ -1,0 +1,19 @@
+\ProvidesPackage{mymetropolis}
+
+\usetheme[sectionpage=progressbar, subsectionpage=progressbar, block=fill]{metropolis}
+
+\makeatletter
+ 
+%\setbeamertemplate{section in toc}[sections numbered]
+%\setbeamertemplate{subsection in toc}[subsections numbered]
+ 
+\patchcmd{\ps@empty}{\usebeamertemplate***{navigation symbols}}{}{}{} 
+ 
+\makeatother
+
+\newcommand{\tocframe}{
+	\frame[plain,c,noframenumbering]{
+		\tableofcontents
+	}
+}
+

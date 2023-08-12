@@ -1,0 +1,6 @@
+\babel@toc {french}{}\relax 
+\beamer@sectionintoc {1}{Contexte}{3}{0}{1}
+\beamer@sectionintoc {2}{Principe de la génération}{6}{0}{2}
+\beamer@sectionintoc {3}{Mise en \oe uvre}{19}{0}{3}
+\beamer@sectionintoc {4}{Discussion}{24}{0}{4}
+\beamer@sectionintoc {5}{Conclusion}{29}{0}{5}
