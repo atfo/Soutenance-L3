@@ -1,6 +1,7 @@
 \ProvidesPackage{mymetropolis}
 
 \usetheme[sectionpage=progressbar, subsectionpage=progressbar, block=fill]{metropolis}
+\setbeamertemplate{footline}{}
 
 \makeatletter
  

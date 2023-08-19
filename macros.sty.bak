@@ -10,12 +10,13 @@
 \RequirePackage{amsmath}				
 \RequirePackage{amssymb}				
 \RequirePackage{mathrsfs}
+\RequirePackage{tabularx}
 \RequirePackage{booktabs}
 \RequirePackage[separate-uncertainty = true]{siunitx}
 \RequirePackage{xcolor}
 
-%\RequirePackage[margin=1cm]{caption} %[justification=centering]{caption} %Pour les légendes centralisées
-%\RequirePackage[margin={1cm,0cm}]{subcaption}
+\RequirePackage[margin=1cm]{caption} %[justification=centering]{caption} %Pour les légendes centralisées
+\RequirePackage[margin={1cm,0cm}]{subcaption}
 
 \RequirePackage{tikz}
 \usepackage[abs]{overpic}

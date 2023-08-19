@@ -1,6 +1,9 @@
 \documentclass{beamer}
 
 \usepackage{mymetropolis}
+\usepackage{lmodern}
+\usefonttheme{default}
+\usepackage{appendixnumberbeamer}
 
 \usepackage{macros}
 %\input{slides.tex}
@@ -36,7 +39,7 @@
 \column{0.3\linewidth}
 \begin{figure}[htbp]
   \centering
-  \includegraphics<1->[width=\textwidth]{img/logos_small.png}
+  \includegraphics<1->[width=\textwidth]{img/logos_small_t.png}
 \end{figure}
 \end{columns}
 
@@ -51,10 +54,9 @@
 \begin{frame}{Obtention d'un gaz dégénéré à 2 dimensions}
 \begin{columns}
 \column{0.56\linewidth}
+L'équipe Rubidium travaille sur des gaz de rubidium dégénérés (``condensats'') à deux dimensions. \\
+Piégeage dans les zones sombres par un laser à $\lmbd{532}$ :
   \begin{itemize}%[<+->]
-  \item $\num{e5}$ atomes à $\SI{20}{nK}$
-  \item rubidium
-  \item piégeage dans les zones sombres par un laser à $\lmbd{532}$
   \item DMD (\textit{digital micromirror device}): ``boîte''
   \item faisceaux cohérents : ``accordéon'' $\rightarrow$ piéger dans un plan
   \end{itemize}
@@ -72,14 +74,32 @@
 \begin{frame}{Utilisation des lasers à 532~nm}
 \begin{columns}
 \column{0.7\linewidth}
-Interaction champ électrique-dipôle électrique induit
-$\rightarrow$ force de piégeage dérivant d'un potentiel (classiquement)
-\[U_\mathsc{dip}(\v r) = {-\frac12 \langle \v d \cdot \v E \rangle} = -\frac{1}{2\varepsilon_0 c}\mathfrak{Re}\left(\alpha(\omega)\right) I(\v r) \]
-Cycles d'absorption et réémission $\rightarrow$ force de pression de radiation $\v F = \hbar \v k \gamma,\ \gamma = \Gamma P_e$
+\visible<1->{%
+Force de piégeage dipolaire (polarisation de l'atome)
+\vspace*{-0.5cm}
+\begin{align*}
+&\v F_\mathsc{dip}(\v r) = - \v \nabla U_\mathsc{dip}(\v r),\,
+U_\mathsc{dip}(\v r)=\frac{3\pi c^2}{2\omega_0^3} \frac{\Gamma}{\widetilde\Delta} I(\v r) \,, \\
+&\quad\Gamma \text{ la largeur naturelle de la transition}\,, \\
+&\quad\frac{1}{\widetilde{\Delta}} = \frac1{\omega - \omega_0} + \frac{1}{\omega+\omega_0} \approx \frac1{\omega - \omega_0}\,.
+\end{align*}
+}%
+\visible<2->{%
+%\vspace*{0.4cm}
+Force de pression de radiation $\v F = \hbar \v k \gamma$ avec $\gamma$ le taux d'émission spontanée 
+%\vspace{-0.3cm}
+\[ \gamma(\v r) =\frac{3\pi c^2}{2\hbar\omega_0^3} \left(\frac{\Gamma}{\widetilde\Delta}\right)^2 I(\v r)\,.\]
+}%
+\vspace*{-0.3cm}
+\visible<3->{%
+\begin{beamerboxesrounded}[width=\textwidth]{}
+Laser désaccordé vers le bleu : piégeage dans les zones sombres et faible diffusion ($\propto \frac{1}{\widetilde{\Delta}^2}$)
+\end{beamerboxesrounded}
+}%
 \column{0.3\linewidth}
 \tikzset{every picture/.style={scale=0.8}}
 \centering
-\input{img/transitions.tex}
+\visible<1->{\input{img/transitions.tex}}
 \end{columns}
 \end{frame}
 
@@ -108,43 +128,33 @@ avec
 \end{frame}
 
 \begin{frame}{Génération de seconde harmonique}
-Polarisation quadratique pour une onde incidente à la pulsation $\omega$ $\v E = \mathfrak{Re} \left\{ \E_1 \e{-i\omega t} \right\}$
+Polarisation quadratique pour une onde incidente à la pulsation $\omega$ \\
+$\v E = \mathfrak{Re} \left\{ \E_1 \e{-i\omega t} \right\}$
 \begin{align*}
 \v P^{(2)} &= \varepsilon_0 \chi^{(2)} \v E^2 \text{ avec $\chi^{(2)}$ la susceptibilité d'ordre 2}\\
 &= \frac{\varepsilon_0 \chi^{(2)}}{4} \left\{\mathcal E_1 e^{-i\omega t} + \mathcal E_1^* e^{i\omega t} \vphantom{\frac12}\right\}^2 \\
 &= \frac{\varepsilon_0 \chi^{(2)}}{4} \left\{\ubrace{red}{\mathcal E_1^2 \e{-2i\omega t} + \E_1^{*2} \e{2i\omega t}}{seconde harmonique}
 \color{gray} + 2|\mathcal E_1|^2 + \mathcal O(\E_2^2) \vphantom{\frac12} \right\} 
 \end{align*}
+\begin{beamerboxesrounded}[width=\textwidth]{}
+La polarisation quadratique conduit à un terme source à $2\omega$, quadratique en l'amplitude incidente !
+\end{beamerboxesrounded}
 \end{frame}
 
-\begin{frame}{Équation d'évolution}
-Hypothèses simplificatrices :
-\begin{itemize}
-\item polarisation linéaire selon l'un des axes principaux
-\item[$\rightarrow$] $\E_q$ scalaires, $n_q = \sqrt{ \varepsilon^{(1)}(\omega_q)}$
-\item $\E_q = \A_q(x,y,z) \e{ik_qz}$ avec $k_q =\frac{n_q \omega_q}{c}$ et $\frac{\partial^2 \A_q}{\partial z^2} \ll k_q \frac{\partial \A_q}{\partial z}$
-\end{itemize}
-$\boldsymbol \rightarrow$ équation d'onde paraxiale avec terme source quadratique en $\A_1$
-\begin{equation*}
-\left\{\v\nabla_\bot + 2 i k_2 \frac{\partial}{\partial z} \right\} \A_2 = - \frac{2 \chi^{(2)} \omega^2}{c^2} \A_1^2 \e{- i (k_2 - 2k_1) z}
-\end{equation*}
+\begin{frame}{Accord de phase (onde plane)}
+\centering
+%\tikzset{every picture/.style={height=5cm}}
+\include{img/accord.tex}%
+\vspace*{-1cm}
+Interférence destructive du rayonnement émis en $z$ et en  $z+L_\mathsc{coh} := z + \frac{\pi}{\Delta k}$, $\Delta k = k_2 - 2 k_1 = \frac{2\pi}{\lambda_2} \left(n_2 - n_1\right)$
 \end{frame}
 
-\begin{frame}{Accord de phase}
-Pour des ondes planes $\A_q = \A_q(z)$,
-\begin{align*}
-	\dv{\A_2}{z} &= i\frac{\chi^{(2)}\omega}{2cn_2} \A_1^2 \e{-i \Delta k z} \text{ avec } {\Delta k = k_2 - 2k_1} \label{eq:pwe} \\
-	\text{soit } \A_2(L) &= i \frac{\chi^{(2)}\omega}{2 cn_2} \A_1^2 L\, \uline{red}{\operatorname{sinc}\left( \frac{\Delta k L}{2} \right)}\, \e{-i\frac{\Delta k L}{2}}
-\end{align*}
-en sortie du cristal en $z=L$ avec $\A_2(0)=0$ à l'entrée.
-\end{frame}
-
-\begin{frame}{Accord de phase}
-Interférence destructive du rayonnement émis en $z$ et en  $z+L_\mathsc{coh} := z + \frac{\pi}{\Delta k}$. $L_\mathsc{coh} \approx \SI{3}{\micro\meter} \ll L = \SI{2}{cm}$.
-\begin{figure}
+\begin{frame}{Accord de phase (onde plane)}
 \centering
 \input{img/PM.tex}
-\end{figure}
+\begin{beamerboxesrounded}[width=0.8\textwidth]{}
+$L_\mathsc{coh} \approx \SI{3}{\micro\meter} \ll L = \SI{2}{cm}$ : on perd 4 ordres de grandeur sur l'amplitude !
+\end{beamerboxesrounded}
 \end{frame}
 
 \begin{frame}{Quasi-accord de phase}
@@ -165,23 +175,21 @@ En pratique, $\chi^{(2)}(z) = \chi^{(2)}_0 \operatorname{sign}[\cos(2\pi z/ \Lam
 \end{frame}
 
 \begin{frame}
-\begin{align*}
-\left|\A_2(L)\right| \approx \frac{\chie\omega}{2 cn_2} \A_1^2 L\ \left|\operatorname{sinc}\left( \frac{\dke L}{2} \right)\right|
-\end{align*}
-\begin{figure}
 \centering
 \input{img/QPM.tex}
-\end{figure}
+\begin{beamerboxesrounded}[width=0.8\textwidth]{}
+On retrouve la croissance linéaire de l'amplitude !
+\end{beamerboxesrounded}
 \end{frame}
 
-\begin{frame}
-\centering
-\begin{align*}
-\frac{\mathcal I_2}{\mathcal I_1^2} &= \frac{\frac12 n_2 \varepsilon_0 c |\A_2|^2}{\left(\frac12 n_1 \varepsilon_0 c |\A_1|^2\right)^2} 
-	= \frac{\chi_\mathsc{eff}^2\omega^2}{2 n_2 n_1^2 \varepsilon_0 c^3} \color{red} L^2
-\end{align*}
-dans la limite de l'hypothèse de non-déplétion
-\end{frame}
+%\begin{frame}
+%\centering
+%\begin{align*}
+%\frac{\mathcal I_2}{\mathcal I_1^2} &= \frac{\frac12 n_2 \varepsilon_0 c |\A_2|^2}{\left(\frac12 n_1 \varepsilon_0 c |\A_1|^2\right)^2} 
+%	= \frac{\chi_\mathsc{eff}^2\omega^2}{2 n_2 n_1^2 \varepsilon_0 c^3} \color{red} L^2
+%\end{align*}
+%dans la limite de l'hypothèse de non-déplétion
+%\end{frame}
 
 \begin{frame}{Influence du profil transverse --- faisceaux gaussiens}
 Faisceau incident gaussien de longueur de Rayleigh $\zr = \frac{n_1\pi w_0^2}{\lambda}$
@@ -233,14 +241,7 @@ $\Lambda = \qtylist[list-units = single]{6.83; 6.86 ; 6.90 ; 6.93 ; 6,96}{\micro
 %\end{overpic}
 \end{frame}
 
-\begin{frame}{Estimation de la température optimale}
-\centering
-\input{img/sellmeier.tex}
-%\vspace{1cm}
-\input{img/topt.tex}
-\end{frame}
-
-\section{Discussion}
+\section{Discussion de l'efficacité de doublage à basse puissance}
 
 \begin{frame}{Vérification de la relation $\P_2 = \alpha \P_1^2$ (à \SI{82.5}{\celsius})} 
 \centering
@@ -248,16 +249,126 @@ $\Lambda = \qtylist[list-units = single]{6.83; 6.86 ; 6.90 ; 6.93 ; 6,96}{\micro
 \end{frame}
 
 \begin{frame}{Dépendance en température de l'efficacité de conversion}
+\vspace{-0.5cm}
+\begin{overlayarea}{\linewidth}{6cm}
+\only<1,3->{
+\begin{figure}
 \centering
 \include{./img/alphaT.tex}
-\vspace*{-1.3cm}
+\end{figure}}
+\only<2>{\vspace{2cm}
+\small
+\begin{tabular}{@{}cccccc@{}}\toprule
+	$w_0$ $(\unit{\micro\meter})$ & $\zr$ $(\unit{cm})$ & $a=\frac L {2\zr}$ & $\alpha$ théorique $(\unit{\percent\per\watt})$ & $\alpha$ mesuré $(\unit{\percent\per\watt})$ \\ \midrule
+	63    & 2.5 & 0.4 & 1.6 & 3.5 \\ \midrule  
+	30    & 0.6 & 1.7 & 4.2                & 2.8             \\
+	38    & 0.9 & 1.1 & 3.4                & 3.1             \\
+	64    & 2.6 & 0.4 & 1.6                & 1.2             \\ \bottomrule
+\end{tabular}
+}
+\end{overlayarea}
+%\vspace*{-3cm}
 \begin{itemize}[<+->]
-\item $\alpha=\SI{3}{\percent\per\watt} \text{ contre } \SI{2}{\percent\per\watt}$ pour $w_0 = \SI{63}{\micro\meter}$
-\item $\delta T$ FWHM $\approx\SI{1.6}{\celsius}$ contre $\SI{1.2}{\celsius}$.
-\item ajustement : $\pdv{\left(\dke\right)}{T}=\SI{1.7}{\per\centi\meter\per\kelvin}$
+\item $\alpha=\SI{3}{\percent\per\watt} \text{ contre } \SI{2}{\percent\per\watt}$ pour $w_0 = \SI{63}{\micro\meter}$ \pause
+\item $\delta T$ FWHM $\approx\SI{1.6}{\celsius}$ contre $\SI{1.2}{\celsius}$
+\item ajustement de $\pdv{\left(\dke\right)}{T}$ : $\SI{1.7}{\per\centi\meter\per\kelvin}$\\ raisonnable selon la précision du dopage
+\end{itemize}
+\end{frame}
+
+\section{Recherche d'un régime exploitable à haute puissance}
+
+\begin{frame}{Efficacité de conversion à haute puissance}
+
+\small
+\setlength{\tabcolsep}{2.3pt}
+\hspace*{-0.5cm}
+\begin{tabular}{@{}cccccccc@{}} \toprule
+ &  & \multicolumn{2}{c}{théorique} & \multicolumn{2}{c}{basse puissance} & \multicolumn{2}{c}{haute puissance} \\ 
+ \cmidrule(r){3-4} \cmidrule(lr){5-6} \cmidrule(l){7-8} 
+ $\Lambda$ $(\unit{\micro\meter})$ & $\zr$ $(\unit{cm})$ & $T$ $(\unit{\celsius})$ & $\alpha$ $(\unit{\percent\per\watt})$& $T$ $(\unit{\celsius})$ & $\alpha$ $(\unit{\percent\per\watt})$ & $T$ $(\unit{\celsius})$ & $\alpha$ $(\unit{\percent\per\watt})$   \\ \midrule
+ 6.9       & 0.6  & 66.0  & 4.2      & 84.0 & 2.8      & 77.0 & 2.3      \\
+ 6.9       & 0.9  & 66.0  & 3.4      & 84.2 & 3.1      & 75.0 & 2.2      \\
+ 6.9       & 2.6  & 66.2  & 1.6      & 84.0 & 1.2      & 75.0   & 2.7      \\ \bottomrule 
+\end{tabular}
+\normalsize
+\begin{itemize}[<+->]
+\item Effets parasites à haute intensité
+\item Augmenter le waist pour diminuer l'intensité et donc les effets parasites
+\item Doublage extrêmement instable
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Recherche d'un régime stable}
+\begin{itemize}
+\item Plus stable à haute température ? \pause
+\item Essai avec $\Lambda=\SI{6.83}{\micro\meter}$ : $T = \SI{127}{\celsius} \rightarrow \SI{129}{\celsius}$ \pause
+\item Avec ventilation :
+\vspace*{-0.2cm} \hspace*{-0.5cm}
+\begin{figure}
+	\centering
+	\input{./img/mesc1.tex}
+\end{figure}
+\vspace*{-1cm} \pause
+\item Sans ventilation :
+\vspace*{-0.2cm} \hspace*{-0.5cm}
+\begin{figure}
+	\centering
+	\input{./img/mesc2.tex}
+\end{figure}
 \end{itemize}
 \end{frame}
 
 \section{Conclusion}
+
+\begin{frame}{Conclusion}
+\begin{itemize}[<+->]
+\item Doublage réussi
+\item Résultat sans ventilation probant
+\item Mise en évidence d'un manque de stabilité
+\item Rentabilité incertaine
+\item Pistes d'approfondissement :
+\begin{itemize}
+\item Répétabilité avec plusieurs cristaux
+\item Faisceau pulsé pour s'affranchir des effets thermiques
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\appendix
+
+% MOT
+\section{Annexes}
+
+\begin{frame}{Équation d'évolution}
+Hypothèses simplificatrices :
+\begin{itemize}
+\item polarisation linéaire selon l'un des axes principaux
+\item[$\rightarrow$] $\E_q$ scalaires, $n_q = \sqrt{ \varepsilon^{(1)}(\omega_q)}$
+\item $\E_q = \A_q(x,y,z) \e{ik_qz}$ avec $k_q =\frac{n_q \omega_q}{c}$ et $\frac{\partial^2 \A_q}{\partial z^2} \ll k_q \frac{\partial \A_q}{\partial z}$
+\end{itemize}
+$\boldsymbol \rightarrow$ équation d'onde paraxiale avec terme source quadratique en $\A_1$
+\begin{equation*}
+\left\{\v\nabla_\bot + 2 i k_2 \frac{\partial}{\partial z} \right\} \A_2 = - \frac{2 \chi^{(2)} \omega^2}{c^2} \A_1^2 \e{- i (k_2 - 2k_1) z}
+\end{equation*}
+\end{frame}
+
+\begin{frame}{Accord de phase}
+Pour des ondes planes $\A_q = \A_q(z)$,
+\begin{align*}
+	\dv{\A_2}{z} &= i\frac{\chi^{(2)}\omega}{2cn_2} \A_1^2 \e{-i \Delta k z} \text{ avec } {\Delta k = k_2 - 2k_1} \label{eq:pwe} \\
+	\text{soit } \A_2(L) &= i \frac{\chi^{(2)}\omega}{2 cn_2} \A_1^2 L\, \uline{red}{\operatorname{sinc}\left( \frac{\Delta k L}{2} \right)}\, \e{-i\frac{\Delta k L}{2}}
+\end{align*}
+en sortie du cristal en $z=L$ avec $\A_2(0)=0$ à l'entrée.
+\begin{align*}
+\left|\A_2(L)\right| \approx \frac{\chie\omega}{2 cn_2} \A_1^2 L\ \left|\operatorname{sinc}\left( \frac{\dke L}{2} \right)\right|
+\end{align*}
+\end{frame}
+
+\begin{frame}{Estimation de la température optimale}
+\centering
+\input{img/sellmeier.tex}
+%\vspace{1cm}
+\input{img/topt.tex}
+\end{frame}
 
 \end{document}
