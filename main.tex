@@ -19,7 +19,7 @@
 \newcommand{\alphae}[1]{\SI{#1}{\percent\per\watt}}
 
 \title{Réalisation d'un laser à 532~nm\\ par génération de seconde harmonique}
-\date{\today} %TODO
+\date{31 août 2023} %TODO
 \author{Alexandre Fouquet}
 %\institute{Stage de L3}
 
@@ -154,18 +154,18 @@ $\rightarrow$ $\v P^{(2)}_2 \propto \tens\chi^{(2)} \v E^2_1$ : terme source à 
 \begin{figure}
 \centering
 %\vspace{0.2cm}
-\begin{beamerboxesrounded}[width=\textwidth]{}
-Le rayonnement généré n'est pas en phase :
-\end{beamerboxesrounded}
+%\begin{beamerboxesrounded}[width=\textwidth]{}
+%Le rayonnement généré en différents points interfère :
+%\end{beamerboxesrounded}
 %\vspace{-0.3cm}
 %\tikzset{every picture/.style={height=5cm}}
 %\include{img/accord.tex}%
 \includegraphics[scale=0.9]{img/accord.pdf}
 \end{figure}
 \vspace{-0.5cm}
-Interférence destructive du rayonnement émis en $z$ et en  $z+L_\mathsc{coh} := z + \frac{\pi}{\Delta k}$, $\Delta k := k_2 - 2 k_1 = \frac{2\pi}{\lambda_2} \left(n_2 - n_1\right)$
+Interférence destructive du rayonnement émis en 2 points distants de $L_\mathsc{coh} = \frac{\pi}{\Delta k}$ où $\Delta k = k_2 - 2 k_1 = \frac{2\pi}{\lambda_2} \left(n_2 - n_1\right)$
 
-Accord de phase : $\Delta k = 0$, $n_1 = n_2$
+Accord de phase $\Delta k = 0$, $n_1 = n_2$ exclu
 \end{frame}
 
 \begin{frame}{Accord de phase (onde plane)}
@@ -194,11 +194,11 @@ En pratique, %$\chi^{(2)}(z) = \chi^{(2)}_0 \operatorname{sign}[\cos(2\pi z/ \La
 
 \begin{frame}
 \centering
-fondamental à $k_\mathsc\chi = \frac{2\pi}{\Lambda}$ d'amplitude $\chie := \frac2\pi \chi^{(2)}$
+%fondamental à $k_\mathsc\chi = \frac{2\pi}{\Lambda}$ d'amplitude $\chie := \frac2\pi \chi^{(2)}$
 
 \input{img/QPM.tex}
 \begin{beamerboxesrounded}[width=0.8\textwidth]{}
-On retrouve la croissance linéaire de l'amplitude avec $\chi^{(2)} \rightarrow \chie$
+On retrouve la croissance linéaire de l'amplitude avec $\chi^{(2)} \rightarrow \chie = \frac2\pi \chi^{(2)}$ (pour $k_\mathsc\chi = \frac{2\pi}{\Lambda} = \Delta k$)
 \end{beamerboxesrounded}
 \end{frame}
 
@@ -313,7 +313,7 @@ Meilleur résultat ($\Lambda=\SI{6.83}{\micro\meter}$, $T = \SI{127}{\celsius}$)
 \item Pistes d'approfondissement :
 \begin{itemize}
 \item Statistique sur plusieurs cristaux
-\item Faisceau pulsé pour s'affranchir des effets thermiques
+\item Faisceau pulsé pour caractériser le doublage à haute puissance sans effets thermiques
 \end{itemize}
 \end{itemize}
 \end{frame}
@@ -331,6 +331,39 @@ Exemples :
 \item Fraction superfluide dans un condensat de Bose-Einstein en interaction modulé spatialement
 \item Soliton de Townes dans un gaz de Bose à deux composantes
 \end{itemize}
+\end{frame}
+
+\begin{frame}{Utilisation des lasers à 532~nm}
+\vspace*{0.3cm}
+\begin{columns}
+\column{0.75\linewidth}
+\visible<1->{
+Force de piégeage dipolaire (polarisation de l'atome)
+\vspace*{-0.5cm}
+\begin{align*}
+&\v F_\mathsc{dip}(\v r) = - \v \nabla U_\mathsc{dip}(\v r),\,
+U_\mathsc{dip}(\v r)=\frac{3\pi c^2}{2\omega_0^3} \frac{\Gamma}{\widetilde\Delta} I(\v r) \,, \\
+&\quad\Gamma \text{ la largeur naturelle de la transition}\,, \\
+&\quad\frac{1}{\widetilde{\Delta}} = \frac1{\omega - \omega_0} + \frac{1}{\omega+\omega_0} \approx \frac1{\omega - \omega_0}\,.
+\end{align*}
+}%
+\visible<1->{%
+%\vspace*{0.4cm}
+Force de pression de radiation $\v F = \hbar \v k \gamma$ avec $\gamma$ le taux d'émission spontanée 
+%\vspace{-0.3cm}
+\[ \gamma(\v r) =\frac{3\pi c^2}{2\hbar\omega_0^3} \left(\frac{\Gamma}{\widetilde\Delta}\right)^2 I(\v r)\,.\]
+}%
+\vspace*{-0.3cm}
+\visible<1->{%
+\begin{beamerboxesrounded}[width=\textwidth]{}
+Laser désaccordé vers le bleu : piégeage dans les zones sombres et faible diffusion ($\propto \frac{1}{\widetilde{\Delta}^2}$)
+\end{beamerboxesrounded}
+}%
+\column{0.25\linewidth}
+\tikzset{every picture/.style={scale=0.8}}
+\centering
+\visible<1->{\input{img/transitions.tex}}
+\end{columns}
 \end{frame}
 
 \begin{frame}{Milieu non linéaire}
