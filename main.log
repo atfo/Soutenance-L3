@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.22)  21 AUG 2023 22:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.22)  30 AUG 2023 14:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1394,8 +1394,8 @@ tex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count412
 \l__pdf_internal_box=\box105
-) (main.aux (img/accord.aux) (img/alphaT.aux) (img/alphaT.aux)
-(img/alphaT.aux) (img/alphaT.aux) (img/alphaT.aux))
+) (main.aux (img/alphaT.aux) (img/alphaT.aux) (img/alphaT.aux)
+(img/alphaT.aux) (img/alphaT.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
@@ -1586,263 +1586,238 @@ Overfull \vbox (15.63992pt too high) detected at line 28
 
 {C:/Users/Admin/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Admi
 n/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 5
-4.
-
-(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1phv.fd
-File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
-)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 54.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 63.
 
 
 (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 54.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 63.
 
 
 (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 54
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 63
 .
 
 (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 54.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 63.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 54.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 63.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 54.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 63.
 <img/logos_small_t.png, id=76, 124.465pt x 113.92563pt>
 File: img/logos_small_t.png Graphic file (type png)
 <use img/logos_small_t.png>
-Package pdftex.def Info: img/logos_small_t.png  used on input line 54.
+Package pdftex.def Info: img/logos_small_t.png  used on input line 63.
 (pdftex.def)             Requested size: 107.55333pt x 98.44868pt.
 
 [2
 
- <./img/logos_small_t.png>] [3
+ <./img/logos_small_t.png>]
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 8
+8.
 
-]
-<img/accordeon-dmd.png, id=89, 413.29407pt x 605.26125pt>
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+)
+<img/accordeon-dmd.png, id=84, 413.29407pt x 605.26125pt>
 File: img/accordeon-dmd.png Graphic file (type png)
 <use img/accordeon-dmd.png>
-Package pdftex.def Info: img/accordeon-dmd.png  used on input line 87.
+Package pdftex.def Info: img/accordeon-dmd.png  used on input line 88.
 (pdftex.def)             Requested size: 144.65508pt x 211.8446pt.
 
-Overfull \hbox (8.84555pt too wide) in paragraph at lines 87--87
+Overfull \hbox (18.06387pt too wide) in paragraph at lines 88--88
 [][]  
  []
 
-[4
+[3
 
- <./img/accordeon-dmd.png>] [5
+ <./img/accordeon-dmd.png>] [4
 
-] (main.toc) [6
+] (main.toc) [5
 
 ]
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10.95> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 149.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 150.
 
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <8> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 149.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 150.
 
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 149.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 150.
 
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 149.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 150.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <8> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 149.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 150.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <6> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 149.
-LaTeX Font Info:    Trying to load font information for U+euf on input line 149
-.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 150.
+ [6
 
-(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueuf.fd
-File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-)
-[7
+] [7
 
 {C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super
--t1.enc}] [8
+-t1.enc}]
+<img/accord.pdf, id=131, 218.61676pt x 147.1658pt>
+File: img/accord.pdf Graphic file (type pdf)
+<use img/accord.pdf>
+Package pdftex.def Info: img/accord.pdf  used on input line 169.
+(pdftex.def)             Requested size: 196.75325pt x 132.44798pt.
+ [8
+
+ <./img/accord.pdf>] (img/PM.tex) [9
 
 ]
-\openout2 = `img/accord.aux'.
-
- (img/accord.tex) [9
-
-
-
-
-] (img/PM.tex) [10
-
-]
-<./img/PP.pdf, id=151, 181.55168pt x 76.18904pt>
+<./img/PP.pdf, id=174, 181.55168pt x 76.18904pt>
 File: ./img/PP.pdf Graphic file (type pdf)
 <use ./img/PP.pdf>
-Package pdftex.def Info: ./img/PP.pdf  used on input line 199.
+Package pdftex.def Info: ./img/PP.pdf  used on input line 192.
 (pdftex.def)             Requested size: 305.10445pt x 128.0374pt.
- [11
+ [10
 
  <./img/PP.pdf>]
 File: ./img/PP.pdf Graphic file (type pdf)
 <use ./img/PP.pdf>
-Package pdftex.def Info: ./img/PP.pdf  used on input line 199.
+Package pdftex.def Info: ./img/PP.pdf  used on input line 192.
 (pdftex.def)             Requested size: 305.10445pt x 128.0374pt.
+ [11
 
-[12
+] (img/QPM.tex) [12
 
-] (img/QPM.tex) [13
-
-] [14
-
-] (img/bk-factor.tex)
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 232.
- [15
-
-] (main.toc) [16
+] [13
 
 ]
-<img/schema.pdf, id=7529, 521.05402pt x 298.4759pt>
+(img/bk-factor.tex)
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 229.
+ [14
+
+] (main.toc) [15
+
+]
+<img/schema.pdf, id=7552, 521.05402pt x 298.4759pt>
 File: img/schema.pdf Graphic file (type pdf)
 <use img/schema.pdf>
-Package pdftex.def Info: img/schema.pdf  used on input line 242.
+Package pdftex.def Info: img/schema.pdf  used on input line 239.
 (pdftex.def)             Requested size: 317.89018pt x 182.09746pt.
 
-Overfull \hbox (10.60031pt too wide) in paragraph at lines 242--242
+Overfull \hbox (10.60031pt too wide) in paragraph at lines 239--239
  [][] 
  []
 
-[17
+[16
 
  <./img/schema.pdf>]
-<img/cristal clair.jpg, id=7597, 2748.2675pt x 1977.3875pt>
+<img/cristal clair.jpg, id=7620, 2748.2675pt x 1977.3875pt>
 File: img/cristal clair.jpg Graphic file (type jpg)
 <use img/cristal clair.jpg>
-Package pdftex.def Info: img/cristal clair.jpg  used on input line 249.
+Package pdftex.def Info: img/cristal clair.jpg  used on input line 246.
 (pdftex.def)             Requested size: 215.10196pt x 154.75456pt.
- [18
+ [17
 
- <./img/cristal clair.jpg>] (main.toc) [19
+ <./img/cristal clair.jpg>] (main.toc) [18
 
 ]
-(img/quadra.tex) [20
+(img/quadra.tex) [19
 
 ]
 \openout2 = `./img/alphaT.aux'.
 
  (img/alphaT.tex
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 1222.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 718.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 1222.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 718.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <5> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 718.
 )
-Overfull \vbox (47.44733pt too high) detected at line 274
+Overfull \vbox (47.44733pt too high) detected at line 271
  []
 
-[21
+[20
 
 
 
 
 ] (img/bk-factor.tex)
-Overfull \vbox (26.24028pt too high) detected at line 274
+Overfull \vbox (26.24028pt too high) detected at line 271
  []
 
-[22
+[21
 
 ]
 \openout2 = `./img/alphaT.aux'.
 
  (img/alphaT.tex)
-Overfull \vbox (47.44733pt too high) detected at line 274
+Overfull \vbox (47.44733pt too high) detected at line 271
  []
 
-[23
+[22
 
 
 
 
-] (main.toc) [24
+] (main.toc) [23
+
+] [24
 
 ] [25
 
 ] [26
 
-] [27
-
 ] (img/mesc1.tex)
-Overfull \hbox (17.67783pt too wide) in paragraph at lines 2972--304
+Overfull \hbox (17.67783pt too wide) in paragraph at lines 2972--302
  [] 
  []
 
 (img/mesc2.tex)
-Overfull \hbox (17.67337pt too wide) in paragraph at lines 4331--304
+Overfull \hbox (17.67337pt too wide) in paragraph at lines 4331--302
  [] 
  []
 
 
-Overfull \vbox (16.67136pt too high) detected at line 304
+Overfull \vbox (6.50644pt too high) detected at line 302
+ []
+
+[27
+
+] (img/mesc1.tex)
+Overfull \hbox (17.67783pt too wide) in paragraph at lines 2972--302
+ [] 
+ []
+
+(img/mesc2.tex)
+Overfull \hbox (17.67337pt too wide) in paragraph at lines 4331--302
+ [] 
+ []
+
+
+Overfull \vbox (6.50644pt too high) detected at line 302
  []
 
 [28
 
-] (img/mesc1.tex)
-Overfull \hbox (17.67783pt too wide) in paragraph at lines 2972--304
- [] 
- []
+] (main.toc) [29
 
-(img/mesc2.tex)
-Overfull \hbox (17.67337pt too wide) in paragraph at lines 4331--304
- [] 
- []
+] [30
 
+] (main.toc) [31
 
-Overfull \vbox (16.67136pt too high) detected at line 304
- []
+] [32
 
-[29
+]
+LaTeX Font Info:    Trying to load font information for U+euf on input line 349
+.
 
-] (img/mesc1.tex)
-Overfull \hbox (17.67783pt too wide) in paragraph at lines 2972--304
- [] 
- []
-
-(img/mesc2.tex)
-Overfull \hbox (17.67337pt too wide) in paragraph at lines 4331--304
- [] 
- []
-
-
-Overfull \vbox (16.67136pt too high) detected at line 304
- []
-
-[30
-
-] (img/mesc1.tex)
-Overfull \hbox (17.67783pt too wide) in paragraph at lines 2972--304
- [] 
- []
-
-(img/mesc2.tex)
-Overfull \hbox (17.67337pt too wide) in paragraph at lines 4331--304
- [] 
- []
-
-
-Overfull \vbox (16.67136pt too high) detected at line 304
- []
-
-[31
-
-] (main.toc) [32
-
-] [33
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+)
+[33
 
 ] [34
 
@@ -1852,117 +1827,105 @@ Overfull \vbox (16.67136pt too high) detected at line 304
 
 ] [37
 
-] [38
-
-] [39
-
-] (main.toc) [40
-
 ]
-[41
-
-] [42
-
-] [43
-
-]
-<img/cristal2.pdf, id=7757, 189.89677pt x 111.40999pt>
+<img/cristal2.pdf, id=7759, 189.89677pt x 111.40999pt>
 File: img/cristal2.pdf Graphic file (type pdf)
 <use img/cristal2.pdf>
-Package pdftex.def Info: img/cristal2.pdf  used on input line 374.
+Package pdftex.def Info: img/cristal2.pdf  used on input line 412.
 (pdftex.def)             Requested size: 242.4933pt x 142.26378pt.
- [44
+ [38
 
- <./img/cristal2.pdf>] (img/sellmeier.tex) (img/topt.tex)
-Overfull \hbox (11.21368pt too wide) in paragraph at lines 543--381
+ <./img/cristal2.pdf>] (img/sellmeier.tex)
+(img/topt.tex)
+Overfull \hbox (11.21368pt too wide) in paragraph at lines 543--419
  [][] 
  []
 
 
-Overfull \vbox (36.14714pt too high) detected at line 381
+Overfull \vbox (36.14714pt too high) detected at line 419
+ []
+
+[39
+
+]
+\openout2 = `./img/alphaT.aux'.
+
+ (img/alphaT.tex)
+Overfull \vbox (47.44733pt too high) detected at line 446
+ []
+
+
+Overfull \vbox (8.95212pt too high) detected at line 446
+ []
+
+[40
+
+
+
+
+]
+Overfull \hbox (25.95052pt too wide) in paragraph at lines 446--446
+[][] 
+ []
+
+
+Overfull \vbox (8.95212pt too high) detected at line 446
+ []
+
+[41
+
+]
+\openout2 = `./img/alphaT.aux'.
+
+ (img/alphaT.tex)
+Overfull \vbox (47.44733pt too high) detected at line 446
+ []
+
+
+Overfull \vbox (8.95212pt too high) detected at line 446
+ []
+
+[42
+
+
+
+
+]
+\openout2 = `./img/alphaT.aux'.
+
+ (img/alphaT.tex)
+Overfull \vbox (47.44733pt too high) detected at line 446
+ []
+
+
+Overfull \vbox (8.95212pt too high) detected at line 446
+ []
+
+[43
+
+
+
+
+]
+Overfull \hbox (8.44151pt too wide) in paragraph at lines 467--467
+[]|  [] 
+ []
+
+[44
+
+]
+Overfull \hbox (8.44151pt too wide) in paragraph at lines 467--467
+[]|  [] 
  []
 
 [45
 
 ]
-\openout2 = `./img/alphaT.aux'.
-
- (img/alphaT.tex)
-Overfull \vbox (47.44733pt too high) detected at line 408
- []
-
-
-Overfull \vbox (8.95212pt too high) detected at line 408
+Overfull \hbox (8.44151pt too wide) in paragraph at lines 467--467
+[]|  [] 
  []
 
 [46
-
-
-
-
-]
-Overfull \hbox (25.95052pt too wide) in paragraph at lines 408--408
-[][] 
- []
-
-
-Overfull \vbox (8.95212pt too high) detected at line 408
- []
-
-[47
-
-]
-\openout2 = `./img/alphaT.aux'.
-
- (img/alphaT.tex)
-Overfull \vbox (47.44733pt too high) detected at line 408
- []
-
-
-Overfull \vbox (8.95212pt too high) detected at line 408
- []
-
-[48
-
-
-
-
-]
-\openout2 = `./img/alphaT.aux'.
-
- (img/alphaT.tex)
-Overfull \vbox (47.44733pt too high) detected at line 408
- []
-
-
-Overfull \vbox (8.95212pt too high) detected at line 408
- []
-
-[49
-
-
-
-
-]
-Overfull \hbox (8.44151pt too wide) in paragraph at lines 429--429
-[]|  [] 
- []
-
-[50
-
-]
-Overfull \hbox (8.44151pt too wide) in paragraph at lines 429--429
-[]|  [] 
- []
-
-[51
-
-]
-Overfull \hbox (8.44151pt too wide) in paragraph at lines 429--429
-[]|  [] 
- []
-
-[52
 
 ]
 \tf@nav=\write6
@@ -1974,21 +1937,21 @@ Overfull \hbox (8.44151pt too wide) in paragraph at lines 429--429
 \tf@snm=\write8
 \openout8 = `main.snm'.
 
- (main.aux (img/accord.aux) (img/alphaT.aux) (img/alphaT.aux)
-(img/alphaT.aux) (img/alphaT.aux) (img/alphaT.aux))
+ (main.aux (img/alphaT.aux) (img/alphaT.aux) (img/alphaT.aux)
+(img/alphaT.aux) (img/alphaT.aux))
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0E42F1F631FAC89539CC0A873B868BF3;1379.
+(rerunfilecheck)             Checksum: 1F7C74E6163D2FC8949A1B2001BD692B;1293.
  ) 
 Here is how much of TeX's memory you used:
- 51022 strings out of 475550
- 1230360 string characters out of 5762533
- 3373376 words of memory out of 5000000
- 71157 multiletter control sequences out of 15000+600000
- 643477 words of font info for 153 fonts, out of 8000000 for 9000
+ 48841 strings out of 475550
+ 1184796 string characters out of 5762533
+ 3363910 words of memory out of 5000000
+ 69003 multiletter control sequences out of 15000+600000
+ 643241 words of font info for 152 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,23n,137p,1958b,2802s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
@@ -1999,26 +1962,31 @@ ts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Admin/AppData/Local/Programs/M
 iKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Admin/AppData/Local/Pr
 ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Admin/AppData/
 Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/Admi
-n/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/U
-sers/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.
-pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmss8.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmsy7.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Admin/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/Admin/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Admin/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb><C:/Users/Admi
-n/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm0500.pfb><C:/Us
-ers/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm0600.pf
-b><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfr
-m1095.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helveti
-c/uhvb8a.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helv
-etic/uhvr8a.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/h
-elvetic/uhvro8a.pfb>
-Output written on main.pdf (52 pages, 5419357 bytes).
+n/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Us
+ers/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb
+><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mr7.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmss10.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmss12.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmss8.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Admin/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Admin/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Admin/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/User
+s/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam1
+0.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/symbols/msbm10.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/rsfs/rsfs10.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/cm-super/sfrm0500.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/cm-super/sfrm0600.pfb><C:/Users/Admin/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Users/Admin/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/cm-super/sfrm1095.pfb><C:/Users/Admin/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Admin/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Admin/App
+Data/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on main.pdf (46 pages, 5349683 bytes).
 PDF statistics:
- 22478 PDF objects out of 26593 (max. 8388607)
- 114 named destinations out of 1000 (max. 500000)
- 233 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 22484 PDF objects out of 26593 (max. 8388607)
+ 102 named destinations out of 1000 (max. 500000)
+ 238 words of extra memory for PDF output out of 10000 (max. 10000000)
 

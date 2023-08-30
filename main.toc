@@ -1,8 +1,8 @@
 \babel@toc {french}{}\relax 
 \beamer@sectionintoc {1}{Présentation du stage}{2}{0}{1}
-\beamer@sectionintoc {2}{Principe de la génération}{6}{0}{2}
-\beamer@sectionintoc {3}{Mise en \oe uvre}{16}{0}{3}
-\beamer@sectionintoc {4}{Discussion de l'efficacité de doublage à basse puissance}{19}{0}{4}
-\beamer@sectionintoc {5}{Recherche d'un régime exploitable à haute puissance}{24}{0}{5}
-\beamer@sectionintoc {6}{Conclusion}{32}{0}{6}
-\beamer@sectionintoc {7}{Annexes}{40}{1}{7}
+\beamer@sectionintoc {2}{Principe de la génération}{5}{0}{2}
+\beamer@sectionintoc {3}{Mise en \oe uvre}{15}{0}{3}
+\beamer@sectionintoc {4}{Efficacité de doublage à basse puissance}{18}{0}{4}
+\beamer@sectionintoc {5}{Recherche d'un régime exploitable à haute puissance}{23}{0}{5}
+\beamer@sectionintoc {6}{Conclusion}{29}{0}{6}
+\beamer@sectionintoc {7}{Annexes}{31}{1}{7}

@@ -30,22 +30,31 @@
 {\metroset{sectionpage=none}
 \section{Présentation du stage}
 \setbeamertemplate{navigation symbols}{\normalsize\insertframenumber/\inserttotalframenumber}
-\begin{frame}
+
+\begin{frame}{}
+
+\begin{center}
+\large Stage L3
+\end{center}
+
 \begin{columns}
 \column{0.65\linewidth}
-\begin{itemize}
-\item groupe Gaz quantiques
-\item Laboratoire Kastler Brossel
-\item Collège de France
-\item<1-> équipe Rubidium
-\item<1-> maître de stage : Jérôme Beugnon
-\end{itemize}
+Groupe Gaz quantiques \\
+Laboratoire Kastler Brossel \\
+Collège de France \\
+Équipe Rubidium \\
+%maître de stage : Jérôme Beugnon
 \column{0.35\linewidth}
+\vspace{-0.5cm}
 \begin{figure}[htbp]
   \centering
   \includegraphics<1->[width=\textwidth]{img/logos_small_t.png}
 \end{figure}
 \end{columns}
+
+\begin{center}
+\large Maître de stage : Jérôme Beugnon
+\end{center}
 
 %\begin{figure}[htbp]
 %  \centering
@@ -53,35 +62,27 @@
 %\end{figure}
 \end{frame}
 
-\begin{frame}{Travail de l'équipe}
-Condensats 2D de gaz de rubidium soumis à un potentiel contrôlé
-
-Exemples :
-\begin{itemize}
-\item Fraction superfluide dans un condensat de Bose-Einstein en interaction modulé spatialement
-\item Soliton de Townes dans un gaz de Bose à deux composantes
-\end{itemize}
-\end{frame}
-
 
 \begin{frame}{Obtention d'un gaz dégénéré à 2 dimensions}
 \begin{columns}
-\column{0.56\linewidth}
+\column{0.59\linewidth}
 %L'équipe Rubidium travaille sur des gaz de rubidium dégénérés (``condensats'') à deux dimensions.
 %
-%\vspace{0.5cm}
-Piégeage dans les zones sombres par un laser à $\lmbd{532}$ :
+Condensats 2D de gaz de rubidium soumis à un potentiel contrôlé
+
+\vspace{0.5cm}
+À partir d'un condensat 3D, piégeage dans les zones sombres par un laser à $\lmbd{532}$ (force dipolaire) :
   \begin{itemize}%[<+->]
-  \item DMD (\textit{digital micromirror device}): ``boîte''
-  \item faisceaux cohérents : ``accordéon''\\$\rightarrow$ piéger dans un plan
+  \item plan : réseau optique
+  \item potentiel (disque) : DMD\\(\textit{digital micromirror device})
   \end{itemize}
-\column{0.44\linewidth}
+\column{0.41\linewidth}
 %\includegraphics[height=7.5cm]{img/accordeon-dmd.png}
 \begin{overpic}[percent,scale=0.35,tics=5]{img/accordeon-dmd.png}
     \put(51,79){DMD}
     \put(34,74){objectif de}
     \put(34,70){microscope}
-    \put(34,64){paroi}
+%    \put(34,64){paroi}
 \end{overpic}
 \end{columns}
 \end{frame}
@@ -121,17 +122,216 @@ Piégeage dans les zones sombres par un laser à $\lmbd{532}$ :
 \begin{frame}{Objectif du stage}
 \begin{itemize}
 \item Lasers verts coûteux et fragiles
-\item Fabriquer le laser dans le labo à partir d'un laser à $\lmbd{1064}$ par doublage de fréquence
-\item[$\rightarrow$] Il suffit d'avoir des cristaux de remplacement
+\item Fabriquer le laser dans le labo à partir d'un laser à $\lmbd{1064}$ plus facile d'accès
+\item par doublage de fréquence (génération de seconde harmonique)
 \end{itemize}
 \begin{beamerboxesrounded}[width=0.9\textwidth]{}
-Objectif : réalisation du laser à $\lmbd{532}$ par génération de seconde harmonique et étude de la puissance générée et de la stabilité
-\end{beamerboxesrounded}
+Objectif : réalisation du laser à $\lmbd{532}$ de $\sim\SI{2}{W}$ et étude\\de l'efficacité du doublage et de sa stabilité
+\end{beamerboxesrounded} %TODO
 \end{frame}
 
 }
 
 \section{Principe de la génération}
+
+\begin{frame}{Milieu non linéaire}
+Équation d'onde dans un milieu non magnétique \only<2->{\textcolor{red}{non}} linéaire,\\ dans le domaine de Fourier (équation de Helmholtz) :
+\begin{equation*}
+\boldsymbol{\nabla}^2 \boldsymbol{\E}_q + \frac{\omega_q^2}{c^2}\tens\epsilon^{(1)}(\omega_q)\cdot \v \E_q(\v r) = \alt<1>{0}{{\textcolor{red}{- \frac{\omega_q^2}{\epsilon_0 c^2} \boldsymbol{\mathcal{P}}^\mathsc{NL}_q(\v r) }} }
+\end{equation*}
+avec $\tens \epsilon^{(1)}$ le tenseur de permittivité diélectrique relative (linéaire)\\
+\only<2->{et $\boldsymbol{\mathcal{P}}^\mathsc{NL}_q$ la $q$-ème harmonique de la polarisation non-linéaire}
+
+\pause
+En particulier, $\v P^{(2)} \propto \tens\chi^{(2)} \v E^2$ avec $\tens\chi^{(2)}$ la susceptibilité d'ordre 2
+
+%\pause
+$\rightarrow$ $\v P^{(2)}_2 \propto \tens\chi^{(2)} \v E^2_1$ : terme source à la fréquence double
+\end{frame}
+
+\begin{frame}{Accord de phase (onde plane)}
+
+\begin{figure}
+\centering
+%\vspace{0.2cm}
+\begin{beamerboxesrounded}[width=\textwidth]{}
+Le rayonnement généré n'est pas en phase :
+\end{beamerboxesrounded}
+%\vspace{-0.3cm}
+%\tikzset{every picture/.style={height=5cm}}
+%\include{img/accord.tex}%
+\includegraphics[scale=0.9]{img/accord.pdf}
+\end{figure}
+\vspace{-0.5cm}
+Interférence destructive du rayonnement émis en $z$ et en  $z+L_\mathsc{coh} := z + \frac{\pi}{\Delta k}$, $\Delta k := k_2 - 2 k_1 = \frac{2\pi}{\lambda_2} \left(n_2 - n_1\right)$
+
+Accord de phase : $\Delta k = 0$, $n_1 = n_2$
+\end{frame}
+
+\begin{frame}{Accord de phase (onde plane)}
+\centering
+\input{img/PM.tex}
+\begin{beamerboxesrounded}[width=0.8\textwidth]{}
+$n_1\neq n_2$, $L_\mathsc{coh} \approx \SI{3}{\micro\meter} \ll L = \SI{2}{cm}$ : on perd 4 ordres de grandeur sur l'amplitude !
+\end{beamerboxesrounded}
+\end{frame}
+
+\begin{frame}{Quasi-accord de phase}
+Solution : $\chi^{(2)}(z)$ variant spatialement avec un nombre d'onde $k_\mathsc{\chi} = \Delta k$ : remplace $\Delta k$ par $\dke := \Delta k - k_\chi = 0$
+\pause
+
+En pratique, %$\chi^{(2)}(z) = \chi^{(2)}_0 \operatorname{sign}[\cos(2\pi z/ \Lambda)]$
+
+\begin{figure}
+\centering
+\includegraphics[height=4.5cm]{./img/PP.pdf}
+\end{figure}
+
+
+%$\chi^{(2)} \to \chie := \frac2\pi \chi^{(2)}$, $\Delta k \to \dke := \Delta k - k_\mathsc{\chi}$
+\end{frame}
+
+
+\begin{frame}
+\centering
+fondamental à $k_\mathsc\chi = \frac{2\pi}{\Lambda}$ d'amplitude $\chie := \frac2\pi \chi^{(2)}$
+
+\input{img/QPM.tex}
+\begin{beamerboxesrounded}[width=0.8\textwidth]{}
+On retrouve la croissance linéaire de l'amplitude avec $\chi^{(2)} \rightarrow \chie$
+\end{beamerboxesrounded}
+\end{frame}
+
+%\begin{frame}
+%\centering
+%\begin{align*}
+%\frac{\mathcal I_2}{\mathcal I_1^2} &= \frac{\frac12 n_2 \varepsilon_0 c |\A_2|^2}{\left(\frac12 n_1 \varepsilon_0 c |\A_1|^2\right)^2} 
+%	= \frac{\chi_\mathsc{eff}^2\omega^2}{2 n_2 n_1^2 \varepsilon_0 c^3} \color{red} L^2
+%\end{align*}
+%dans la limite de l'hypothèse de non-déplétion
+%\end{frame}
+
+\begin{frame}{Influence du profil transverse --- faisceaux gaussiens}
+Faisceau incident gaussien de longueur de Rayleigh $\zr$% = \frac{n_1\pi w_0^2}{\lambda}$
+
+Théorie de Boyd-Kleinman : efficacité de conversion $\alpha = \frac{\P_2}{\P_1^2}$
+\begin{align*}
+\alpha = \frac{\omega^3 \chie^2 L}{2 \varepsilon_0 c^4 \pi n_1 n_2} h(a,b)
+\end{align*}
+avec $\underset{\text{\normalsize \rotatebox[origin=c]{180}{$\Lsh$} choix du faisceau}}{a=\frac{L}{2z_{\mathsc R}} \text{  (focalisation)}}$, $\underset{\text{\normalsize \rotatebox[origin=c]{180}{$\Lsh$} réglage température}}{b=- \Delta k_\mathsc{eff} z_\mathsc{R} \text{ (déphasage)}\vphantom{\frac{L}{2z_{\mathsc R}}}}$\\
+et $h(a,b)$ le facteur de Boyd-Kleinman
+%	&\text{et } h(a,b)=\frac{1}{4a} \left|\int_{-a}^{a} \frac{\e{ib\zeta}}{1+i\zeta} \diff \zeta \right|^2
+\end{frame}
+
+\begin{frame}{Optimum de conversion : $h(2.8,0.58)=1.068$}
+\centering
+\input{img/bk-factor.tex}
+\end{frame}
+
+\section{Mise en \oe uvre}
+
+\begin{frame}{Montage}
+\centering
+\includegraphics[height=6.4cm]{img/schema.pdf}
+%\begin{overpic}[percent,height=6cm,grid,tics=5]{img/schema.pdf}
+%\put(57,53){\small \color{red} \lmbd{1064}}
+%\end{overpic}
+\end{frame}
+
+\begin{frame}[plain,noframenumbering]
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.7\linewidth]{img/cristal clair.jpg}
+\end{figure}
+\end{frame}
+
+\section{Efficacité de doublage à basse puissance}
+
+\begin{frame}{Vérification de la relation $\P_2 = \alpha \P_1^2$ ($\Lambda=\SI{6.9}{\micro\meter}$, $T=\SI{82.5}{\celsius}$)} 
+\centering
+\input{img/quadra.tex}
+\end{frame}
+
+\begin{frame}{Dépendance en température de l'efficacité de conversion ($\Lambda=\SI{6.9}{\micro\meter}$)}
+\vspace{-0.5cm}
+\begin{overlayarea}{\linewidth}{6cm}
+\only<1,3->{%
+\begin{figure}
+\centering
+\include{./img/alphaT.tex}
+\end{figure}}
+\only<2>{%
+\begin{figure}
+\centering
+\input{img/bk-factor.tex}
+\end{figure}}
+\end{overlayarea}
+\only<3->{%
+ajustement de $\pdv{\left(\dke\right)}{T}$ : $\SI{1.7}{\per\centi\meter\per\kelvin}$\\ raisonnable selon la précision du dopage, mais $\alpha$ trop grand pour $\zr=\SI{2.4}{cm}$ ($\chie = \SI{42}{pm/V}$ contre $\chie = \SI{32}{pm/V}$)}
+\end{frame}
+
+\section{Recherche d'un régime exploitable à haute puissance}
+
+\begin{frame}{Conversion à haute puissance}
+\begin{itemize}[<+->]
+\item Effets parasites à haute intensité réduisent l'efficacité de conversion
+\item Doublage extrêmement instable
+\item Des configurations moins instables que d'autres
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Recherche d'un régime stable}
+Meilleur résultat ($\Lambda=\SI{6.83}{\micro\meter}$, $T = \SI{127}{\celsius}$)
+\begin{itemize}
+%\item Hypothèse : plus stable à haute température \pause
+%\item Essai avec $\Lambda=\SI{6.83}{\micro\meter}$ : $T = \SI{127}{\celsius}$ \pause% \rightarrow \SI{129}{\celsius}$ \pause
+\item[ ] Avec ventilation :
+\vspace*{-0.2cm} \hspace*{-0.5cm}
+\begin{figure}
+	\centering
+	\input{./img/mesc1.tex}
+\end{figure}
+\vspace*{-1cm} \pause
+\item[ ] Sans ventilation :
+\vspace*{-0.2cm} \hspace*{-0.5cm}
+\begin{figure}
+	\centering
+	\input{./img/mesc2.tex}
+\end{figure}
+\end{itemize}
+\end{frame}
+
+\section{Conclusion}
+
+\begin{frame}{Conclusion}
+\begin{itemize}%[<+->]
+\item Doublage réussi
+\item Résultat sans ventilation probant
+\item Mise en évidence d'un manque de stabilité
+\item Utilisation robuste difficile
+\item[$\hookrightarrow$] avantage pratique pas évident
+\item Pistes d'approfondissement :
+\begin{itemize}
+\item Statistique sur plusieurs cristaux
+\item Faisceau pulsé pour s'affranchir des effets thermiques
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\appendix
+
+%TODO MOT
+\section{Annexes}
+
+\begin{frame}{Travail de l'équipe}
+Condensats 2D de gaz de rubidium soumis à un potentiel contrôlé
+
+Exemples :
+\begin{itemize}
+\item Fraction superfluide dans un condensat de Bose-Einstein en interaction modulé spatialement
+\item Soliton de Townes dans un gaz de Bose à deux composantes
+\end{itemize}
+\end{frame}
 
 \begin{frame}{Milieu non linéaire}
 Équation d'onde dans un milieu non magnétique non linéaire :
@@ -161,168 +361,6 @@ $\v E = \mathfrak{Re} \left\{ \v \E_1 \e{-i\omega t} \right\}$
 La polarisation quadratique conduit à un terme source à $2\omega$,\\quadratique en l'amplitude incidente !
 \end{beamerboxesrounded}
 \end{frame}
-
-\begin{frame}{Accord de phase (onde plane)}
-\centering
-\begin{beamerboxesrounded}[width=\textwidth]{}
-Cependant, le rayonnement généré n'est pas en phase :
-\end{beamerboxesrounded}
-%\tikzset{every picture/.style={height=5cm}}
-\include{img/accord.tex}%
-\vspace*{-1cm}
-Interférence destructive du rayonnement émis en $z$ et en  $z+L_\mathsc{coh} := z + \frac{\pi}{\Delta k}$, $\Delta k = k_2 - 2 k_1 = \frac{2\pi}{\lambda_2} \left(n_2 - n_1\right)$
-\end{frame}
-
-\begin{frame}{Accord de phase (onde plane)}
-\centering
-\input{img/PM.tex}
-\begin{beamerboxesrounded}[width=0.8\textwidth]{}
-$n_1\neq n_2$, $L_\mathsc{coh} \approx \SI{3}{\micro\meter} \ll L = \SI{2}{cm}$ : on perd 4 ordres de grandeur sur l'amplitude !
-\end{beamerboxesrounded}
-\end{frame}
-
-\begin{frame}{Quasi-accord de phase}
-Solution : $\chi^{(2)}(z)$ variant spatialement avec un nombre d'onde $k_\mathsc{\chi} = \Delta k$ : remplace $\Delta k$ par $\dke := \Delta k - k_\chi = 0$.
-\pause
-
-En pratique, $\chi^{(2)}(z) = \chi^{(2)}_0 \operatorname{sign}[\cos(2\pi z/ \Lambda)]$ avec un fondamental à $k_\mathsc\chi = \frac{2\pi}{\Lambda}$ d'amplitude $\chie := \frac2\pi \chi^{(2)}$.
-
-\begin{figure}
-\centering
-\includegraphics[height=4.5cm]{./img/PP.pdf}
-\end{figure}
-
-
-%$\chi^{(2)} \to \chie := \frac2\pi \chi^{(2)}$, $\Delta k \to \dke := \Delta k - k_\mathsc{\chi}$
-
-
-\end{frame}
-
-\begin{frame}
-\centering
-\input{img/QPM.tex}
-\begin{beamerboxesrounded}[width=0.8\textwidth]{}
-On retrouve la croissance linéaire de l'amplitude !
-\end{beamerboxesrounded}
-\end{frame}
-
-%\begin{frame}
-%\centering
-%\begin{align*}
-%\frac{\mathcal I_2}{\mathcal I_1^2} &= \frac{\frac12 n_2 \varepsilon_0 c |\A_2|^2}{\left(\frac12 n_1 \varepsilon_0 c |\A_1|^2\right)^2} 
-%	= \frac{\chi_\mathsc{eff}^2\omega^2}{2 n_2 n_1^2 \varepsilon_0 c^3} \color{red} L^2
-%\end{align*}
-%dans la limite de l'hypothèse de non-déplétion
-%\end{frame}
-
-\begin{frame}{Influence du profil transverse --- faisceaux gaussiens}
-Faisceau incident gaussien de longueur de Rayleigh $\zr = \frac{n_1\pi w_0^2}{\lambda}$
-
-Théorie de Boyd-Kleinman : efficacité de conversion $\alpha = \frac{\P_2}{\P_1^2}$
-\begin{align*}
-&\alpha = \frac{\omega^3 \chie^2 L}{2 \varepsilon_0 c^4 \pi n_1 n_2} h(a,b) \\
-	&\text{avec } a=\frac{L}{2z_{\mathsc R}}\text{ (focalisation), } b=- \Delta k_\mathsc{eff} z_\mathsc{R} \text{ (déphasage)} \\
-	&\text{et } h(a,b)=\frac{1}{4a} \left|\int_{-a}^{a} \frac{\e{ib\zeta}}{1+i\zeta} \diff \zeta \right|^2
-\end{align*}
-\end{frame}
-
-\begin{frame}{Optimum de conversion : $h(2.8,0.58)=1.068$}
-\centering
-\input{img/bk-factor.tex}
-\end{frame}
-
-\section{Mise en \oe uvre}
-
-\begin{frame}{Montage}
-\centering
-\includegraphics[height=6.4cm]{img/schema.pdf}
-%\begin{overpic}[percent,height=6cm,grid,tics=5]{img/schema.pdf}
-%\put(57,53){\small \color{red} \lmbd{1064}}
-%\end{overpic}
-\end{frame}
-
-\begin{frame}[plain,noframenumbering]
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.7\linewidth]{img/cristal clair.jpg}
-\end{figure}
-\end{frame}
-
-\section{Discussion de l'efficacité de doublage à basse puissance}
-
-\begin{frame}{Vérification de la relation $\P_2 = \alpha \P_1^2$ ($\Lambda=\SI{6.9}{\micro\meter}$, $T=\SI{82.5}{\celsius}$)} 
-\centering
-\input{img/quadra.tex}
-\end{frame}
-
-\begin{frame}{Dépendance en température de l'efficacité de conversion}
-\vspace{-0.5cm}
-\begin{overlayarea}{\linewidth}{6cm}
-\only<1,3->{%
-\begin{figure}
-\centering
-\include{./img/alphaT.tex}
-\end{figure}}
-\only<2>{%
-\begin{figure}
-\centering
-\input{img/bk-factor.tex}
-\end{figure}}
-\end{overlayarea}
-\only<3->{%
-ajustement de $\pdv{\left(\dke\right)}{T}$ : $\SI{1.7}{\per\centi\meter\per\kelvin}$\\ raisonnable selon la précision du dopage, mais $\alpha$ trop grand pour $\zr=\SI{2.4}{cm}$}
-\end{frame}
-
-\section{Recherche d'un régime exploitable à haute puissance}
-
-\begin{frame}{Conversion à haute puissance}
-\begin{itemize}[<+->]
-\item Effets parasites à haute intensité réduisent l'efficacité de conversion
-\item Doublage extrêmement instable
-\item Des configurations moins instables que d'autres
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Recherche d'un régime stable}
-\begin{itemize}
-\item Plus stable à haute température ? \pause
-\item Essai avec $\Lambda=\SI{6.83}{\micro\meter}$ : $T = \SI{127}{\celsius} \rightarrow \SI{129}{\celsius}$ \pause
-\item Avec ventilation :
-\vspace*{-0.2cm} \hspace*{-0.5cm}
-\begin{figure}
-	\centering
-	\input{./img/mesc1.tex}
-\end{figure}
-\vspace*{-1cm} \pause
-\item Sans ventilation :
-\vspace*{-0.2cm} \hspace*{-0.5cm}
-\begin{figure}
-	\centering
-	\input{./img/mesc2.tex}
-\end{figure}
-\end{itemize}
-\end{frame}
-
-\section{Conclusion}
-
-\begin{frame}{Conclusion}
-\begin{itemize}[<+->]
-\item Doublage réussi
-\item Résultat sans ventilation probant
-\item Mise en évidence d'un manque de stabilité
-\item Rentabilité incertaine
-\item Pistes d'approfondissement :
-\begin{itemize}
-\item Répétabilité avec plusieurs cristaux
-\item Faisceau pulsé pour s'affranchir des effets thermiques
-\end{itemize}
-\end{itemize}
-\end{frame}
-
-\appendix
-
-% MOT
-\section{Annexes}
 
 \begin{frame}{Équation d'évolution}
 Hypothèses simplificatrices :
